@@ -159,6 +159,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Unreleased
 
+#### Added
+
+* 2 Angstrom box of H<sub>2</sub>O from GROMACS solvate.
+
 ### [1.0.0] - 2021-01-17
 
 * Initial release!
