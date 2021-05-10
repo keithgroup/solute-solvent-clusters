@@ -10,9 +10,9 @@ This data set is not exhaustive; data is included as the Keith group's research 
 
 Data is organized into the following directories.
 
-* `clusters`: XYZ and output files for optimizations and electronic structure calculations.
-* `forcefields`: Parameters used for global optimization calculations.
-* `benchmark`: Calculations used to benchmark global optimization codes.
+- `clusters`: XYZ and output files for optimizations and electronic structure calculations.
+- `forcefields`: Parameters used for global optimization calculations.
+- `benchmark`: Calculations used to benchmark global optimization codes.
 
 Structures are stored in an XYZ format.
 [Quantum chemical JSON](https://github.com/keithgroup/group-scripts/tree/master/examples/qjson-creator) or raw-text output files are provided for ABCluster and ORCA calculations.
@@ -43,7 +43,7 @@ This black-box package is used to identify multiple low-energy structures to the
 
 For simplicity, common settings for ABCluster calculations are described here and are used throughout the data set.
 
-* ``default``: population size: 500, maximum cycles: 1000, scouts: 15.
+- ``default``: population size: 500, maximum cycles: 1000, scouts: 15.
 
 ## Conventions
 
@@ -54,7 +54,7 @@ Information within each `<>` block is generally separated by a period; this mini
 An underscore is sometimes used with information that could be positive or negative, although this is avoided whenever possible.
 Lowercase is used to speed up navigation with a terminal.
 
-* `<structure>`: A human-readable, unique label for the structure involved.
+- `<structure>`: A human-readable, unique label for the structure involved.
   It should also specify refinements (i.e., optimizations) to represent a breadcrumb trail.
   <br><br>
   **Example**
@@ -67,7 +67,7 @@ Lowercase is used to speed up navigation with a terminal.
   For example, a dimer structure with the first and fourth molecule from (H<sub>2</sub>O)<sub>12</sub> would be `12h2o.mol0,3.xyz` (we start from zero).
   Structures from the final calculation of a line of restarts does not need to include the `r` in the structure labels (discussed next).
 
-* `<calculation>`: Specification of the program and calculation type for output files.
+- `<calculation>`: Specification of the program and calculation type for output files.
   Restarts should be specified by appending a `r`.
   <br><br>
   **Example**
@@ -76,7 +76,7 @@ Lowercase is used to speed up navigation with a terminal.
   If a second restart was required, another `r` would just be appended like so: `orca.opt.rr`.
   Sometimes program versions can be added: for example, `orca3.opt` and `orca42.opt` (for ORCA version 4.2).
 
-* `<options>`: Calculation specifications or parameters.
+- `<options>`: Calculation specifications or parameters.
   Usually only the major options are included and is left up to the contributor.
   <br><br>
   **Example**
@@ -86,7 +86,7 @@ Lowercase is used to speed up navigation with a terminal.
   For example, DFT calculation properties are typically specified as B3LYP-D3BJ/def2-TZVP, so we would put `d3bj` before `def2tzvp`.
   Sometimes, commonly used options can be grouped together under a user-defined label defined here.
 
-* `<iteration>`: 
+- `<iteration>`: 
   An `iter` label should be used for calculations where multiple calculations are likely, like ABCluster calculations.
   This avoids the unfortunate situation where many files have to be renamed to include an `iter1` label.
 
@@ -145,15 +145,14 @@ The following file tree is an example of a files for a water tetramer.
 
 Several abbreviations are used throughout the data set such as
 
-* Chemical species
-    * ``h2o``: water (H<sub>2</sub>O), ``mecn``: acetonitrile (CH<sub>3</sub>CN), ``meoh``: methanol (CH<sub>3</sub>OH).
-* Programs
-    * ``abc``: ABCluster
+- Chemical species
+    - ``h2o``: water (H<sub>2</sub>O), ``mecn``: acetonitrile (CH<sub>3</sub>CN), ``meoh``: methanol (CH<sub>3</sub>OH).
+- Programs
+    - ``abc``: ABCluster
 
 ## Changelog
 
 All notable changes to this data set will be documented here.
-
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
@@ -161,20 +160,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Added
 
-* 20 Angstrom box of H<sub>2</sub>O from GROMACS solvate.
+- Tetramer, pentamer, and hexamer xyz files from Temelso et al. (DOI: [10.1021/jp2069489](https://doi.org/10.1021/jp2069489)) SI.
+- 20 Angstrom box of H<sub>2</sub>O from GROMACS solvate.
 
 ### [1.0.0] - 2021-01-17
 
-* Initial release!
+- Initial release!
 
 ## Contributors
 
 Anyone who has contributed data or devoted time towards curating the data set.
 Please let us know if your name should included.
 
-* John A. Keith (Pitt)
-* Alex M. Maldonado (Pitt)
-* Yasemin Basdogan (Pitt)
+- John A. Keith (Pitt)
+- Alex M. Maldonado (Pitt)
+- Yasemin Basdogan (Pitt)
 
 ## Citation
 
