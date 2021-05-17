@@ -158,6 +158,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Unreleased
 
+#### Changed
+
+- Moved selected ABCluster structures into the ``abc`` folders instead of having them separate.
+
 #### Added
 
 - ORCA MP2/def2-TZVP energy+gradient calculation of Yoo et al. boat-b 16mer.
