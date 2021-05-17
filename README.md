@@ -164,7 +164,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Methanol 4-6mer minima from Boyd et al. (DOI [10.1021/ct6002912](https://doi.org/10.1021/ct6002912)).
 - Acetonitrile 4-6mer minima from Malloum et al. (DOI: [10.1002/qua.26222](https://doi.org/10.1002/qua.26222)).
 - Water 16mer and 17mer minima from Yoo et al. (DOI: [10.1021/jz101245s](https://doi.org/10.1021/jz101245s)).
-- Water 4-6mer minima from Temelso et al. (DOI: [10.1021/jp2069489](https://doi.org/10.1021/jp2069489)).
+- Water 4-6mer minima from Temelso et al. (DOI: [10.1021/jp2069489](https://doi.org/10.1021/jp2069489)) with MP2/def2-TZVP engrads.
 - 20 Angstrom box of water from GROMACS solvate.
 
 ### [1.0.0] - 2021-01-17
