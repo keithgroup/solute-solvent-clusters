@@ -1,4 +1,4 @@
-# solute-solvent clusters
+# Solute-solvent clusters
 
 This work provides a database of solute, solvent, and solute-solvent clusters and energies.
 Clusters are curated from literature or from global optimization codes.
@@ -10,16 +10,18 @@ This data set is not exhaustive; data is included as the Keith group's research 
 
 Data is organized into the following directories.
 
-- `clusters`: XYZ and output files for optimizations and electronic structure calculations.
+- `clusters`: Structures and output files from optimizations and electronic structure calculations.
 - `forcefields`: Parameters used for global optimization calculations.
 - `benchmark`: Calculations used to benchmark global optimization codes.
 
-Structures are stored in an XYZ format.
+Structures are typically stored in a XYZ format.
 [Quantum chemical JSON](https://github.com/keithgroup/group-scripts/tree/master/examples/qjson-creator) or raw-text output files are provided for ABCluster and ORCA calculations.
 
 ### Species
 
-The following table specifies which species are included in this data set.
+Clusters that only contain one chemical species (``homogeneous``): water, acetonitrile, and methanol.
+
+Clusters containing two or mores chemical species (``heterogeneous``) are shown in the table below.
 
 | Solvents | Solutes |
 | :---: | :--- |
@@ -32,7 +34,7 @@ The following table specifies which species are included in this data set.
 ## Global optimization
 
 Many of these structures involve clusters of solute and/or solvent molecules.
-We use global optimization codes to identify low-energy structures for the system of interest.
+Global optimization codes are often used to identify low-energy structures for the system of interest.
 
 ### ABCLuster
 
@@ -86,7 +88,7 @@ Lowercase is used to speed up navigation with a terminal.
   For example, DFT calculation properties are typically specified as B3LYP-D3BJ/def2-TZVP, so we would put `d3bj` before `def2tzvp`.
   Sometimes, commonly used options can be grouped together under a user-defined label defined here.
 
-- `<iteration>`: 
+- `<iteration>`:
   An `iter` label should be used for calculations where multiple calculations are likely, like ABCluster calculations.
   This avoids the unfortunate situation where many files have to be renamed to include an `iter1` label.
 
@@ -143,41 +145,12 @@ The following file tree is an example of a files for a water tetramer.
 
 ### Abbreviations
 
-Several abbreviations are used throughout the data set such as
+Several abbreviations are used throughout the data set such as:
 
 - Chemical species
     - ``h2o``: water (H<sub>2</sub>O), ``mecn``: acetonitrile (CH<sub>3</sub>CN), ``meoh``: methanol (CH<sub>3</sub>OH).
 - Programs
     - ``abc``: ABCluster
-
-## Changelog
-
-All notable changes to this data set will be documented here.
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-### Unreleased
-
-#### Changed
-
-- Moved selected ABCluster structures into the ``abc`` folders instead of having them separate.
-
-#### Added
-
-- ORCA MP2/def2-TZVP energy+gradient calculation of Yoo et al. boat-b 16mer.
-- Methanol 4-6mer minima from Boyd et al. (DOI [10.1021/ct6002912](https://doi.org/10.1021/ct6002912)) with MP2/def2-TZVP engrads.
-- Acetonitrile 4-6mer minima from Malloum et al. (DOI: [10.1002/qua.26222](https://doi.org/10.1002/qua.26222)) with MP2/def2-TZVP engrads.
-- Water 16mer minima from Yoo et al. (DOI: [10.1021/jz101245s](https://doi.org/10.1021/jz101245s)) with RI-MP2/def2-TZVP engrad.
-- Water 4-6mer minima from Temelso et al. (DOI: [10.1021/jp2069489](https://doi.org/10.1021/jp2069489)) with MP2/def2-TZVP engrads.
-- 20 Angstrom box of water from GROMACS solvate.
-
-#### Removed
-
-- Moved 12h2o.su.etal monomers, dimers, and trimers to [another repository](https://github.com/keithgroup/mbgdml-h2o-meoh-mecn-engrads).
-
-### [1.0.0] - 2021-01-17
-
-- Initial release!
 
 ## Contributors
 
@@ -190,20 +163,13 @@ Please let us know if your name should included.
 
 ## Citation
 
-(Will be finalized once archived on Zenodo.)
-
-Alex M. Maldonado; John A. Keith. keithgroup/solute-solvent-clusters: Version 1.0. Zenodo. **2021**, DOI: 10.5281/zenodo.xxxxxxx.
-
-### Bibtex
-
 ```text
-@dataset{keithgroup-solute-solvent-clusters,
+@misc{keithgroup-solute-solvent-clusters,
   author={Alex M. Maldonado and John A. Keith},
-  title={keithgroup/solute-solvent-clusters: Version 1.0},
-  year={2021},
+  title={Solute-solvent clusters},
+  year={2022},
   publisher={Zenodo},
-  version={v1.0},
-  doi={10.5281/zenodo.xxxxxxx}
+  version={v1.0.0}
 }
 ```
 
