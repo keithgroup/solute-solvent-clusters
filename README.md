@@ -1,4 +1,4 @@
-# Solute-solvent clusters
+# Solute-solvent clusters [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5975478.svg)](https://doi.org/10.5281/zenodo.5975478)
 
 This work provides a database of solute, solvent, and solute-solvent clusters and energies.
 Clusters are curated from literature or from global optimization codes.
