@@ -171,6 +171,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Water 4-6mer minima from Temelso et al. (DOI: [10.1021/jp2069489](https://doi.org/10.1021/jp2069489)) with MP2/def2-TZVP engrads.
 - 20 Angstrom box of water from GROMACS solvate.
 
+#### Removed
+
+- Moved 12h2o.su.etal monomers, dimers, and trimers to [another repository](https://github.com/keithgroup/mbgdml-h2o-meoh-mecn-engrads).
+
 ### [1.0.0] - 2021-01-17
 
 - Initial release!
