@@ -169,7 +169,7 @@ Please let us know if your name should included.
   title={Solute-solvent clusters},
   year={2022},
   publisher={Zenodo},
-  version={v1.0.0}
+  version={v2.0.0}
 }
 ```
 
