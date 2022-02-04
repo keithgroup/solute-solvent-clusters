@@ -15,10 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Methanol 20mers from Pires & Deturi (DOI [10.1021/ct600348x](https://doi.org/10.1021/ct600348x)) and Yao et al (DOI [10.1063/1.4973380](https://doi.org/10.1063/1.4973380)).
+- Methanol 20mers from Pires & Deturi (DOI: [10.1021/ct600348x](https://doi.org/10.1021/ct600348x)) and Yao et al (DOI: [10.1063/1.4973380](https://doi.org/10.1063/1.4973380)).
 - Packmol generated structures of 30h2o, 112h2o, 140h2o, 30mecn, 39mecn, 30meoh, 50meoh, and 62meoh.
 - ORCA MP2/def2-TZVP energy+gradient calculation of Yoo et al. boat-b 16mer.
-- Methanol 4-6mer minima from Boyd et al. (DOI [10.1021/ct6002912](https://doi.org/10.1021/ct6002912)) with MP2/def2-TZVP engrads.
+- Methanol 4-6mer minima from Boyd et al. (DOI: [10.1021/ct6002912](https://doi.org/10.1021/ct6002912)) with MP2/def2-TZVP engrads.
 - Acetonitrile 4-6mer minima from Malloum et al. (DOI: [10.1002/qua.26222](https://doi.org/10.1002/qua.26222)) with MP2/def2-TZVP engrads.
 - Water 16mer minima from Yoo et al. (DOI: [10.1021/jz101245s](https://doi.org/10.1021/jz101245s)) with RI-MP2/def2-TZVP engrad.
 - Water 4-6mer minima from Temelso et al. (DOI: [10.1021/jp2069489](https://doi.org/10.1021/jp2069489)) with MP2/def2-TZVP engrads.
