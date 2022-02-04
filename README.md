@@ -150,7 +150,7 @@ Several abbreviations are used throughout the data set such as:
 - Chemical species
     - ``h2o``: water (H<sub>2</sub>O), ``mecn``: acetonitrile (CH<sub>3</sub>CN), ``meoh``: methanol (CH<sub>3</sub>OH).
 - Programs
-    - ``abc``: ABCluster
+    - ``abc``: ABCluster, ``pm``: packmol
 
 ## Contributors
 
