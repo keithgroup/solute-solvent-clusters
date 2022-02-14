@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- Packmol generated structures of 1h2o.120meoh, 1meoh.272h2o, 12h2o.115meoh, 35h2o.106meoh, 84h2o.84meoh, 157h2o.52meoh, and 219h2o.24meoh.
+
 ## [2.0.0] - 2022-02-04
 
 ### Changed
